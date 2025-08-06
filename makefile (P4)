@@ -1,0 +1,13 @@
+compile:
+	gcc phoneNumSub.c -c -Wall
+	gcc Project4.c phoneNumSub.o -o Project4.exe -Wall 
+
+
+run:
+	./Project4.exe input3.txt output.txt
+
+
+clean: 
+
+	rm *.o
+	rm *.out

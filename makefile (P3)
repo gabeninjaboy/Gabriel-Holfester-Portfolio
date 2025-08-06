@@ -1,0 +1,15 @@
+compile:
+
+	g++ Queue.cpp -c -Wall
+	g++ Cipher.cpp -c -Wall
+	g++ Project3.cpp Cipher.o Queue.o -o project3.out -Wall
+
+run:
+
+
+	./project3.out
+
+clean:
+
+	rm *.o
+	rm *.out

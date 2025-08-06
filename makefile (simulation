@@ -1,0 +1,17 @@
+compile-all:compile-simulation compile-workpay
+	g++ driver.cpp Simulation.o WorkPay.o -o driver.out -Wall
+
+compile-simulation:
+	g++  Simulation.cpp -c -Wall
+
+
+compile-workpay:
+	g++ WorkPay.cpp -c -Wall
+
+
+run:
+	./driver.out
+
+
+clean:
+	rm -f *.out
